@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 export default function Navbar() {
+  const navigate = useNavigate()
   return (
     <div className="navbar">
       <img src="" alt="" />
@@ -18,7 +19,7 @@ export default function Navbar() {
           Contact
         </Link>
       </div>
-      <button>Get Started</button>
+      <button onClick={() => navigate("/about")}>Get Started</button>
     </div>
   )
 }
