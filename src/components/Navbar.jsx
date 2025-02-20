@@ -5,17 +5,17 @@ export default function Navbar() {
     <div className="navbar">
       <img src="" alt="" />
       <div className="navlist">
-        <Link to="/">
-          <a href="">Home</a>{" "}
+        <Link to="/" className="nav-link">
+          Home
         </Link>
-        <Link to="products">
-          <a href="">Products</a>
+        <Link to="products" className="nav-link">
+          Products
         </Link>
-        <Link to="about">
-          <a href="about">About</a>
+        <Link to="about" className="nav-link">
+          About
         </Link>
-        <Link to="contact">
-          <a href="contact">Contact</a>
+        <Link to="contact" className="nav-link">
+          Contact
         </Link>
       </div>
       <button>Get Started</button>

@@ -24,14 +24,14 @@ body {
   padding:10px 5px;
 }
   
-  .navlist a {
+.nav-link{
     color: #64b5f6; /* Light blue */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
   }
   
-  .navlist a:hover {
+  .nav-link:hover {
     background-color: #e3f2fd; /* Very light blue */
     border-radius: 15px;
 }
