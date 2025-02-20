@@ -5,7 +5,9 @@ export default function RootLayout() {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className="container">
+        <Outlet />
+      </div>
     </div>
   )
 }
