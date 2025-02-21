@@ -7,6 +7,7 @@ import {
 import RootLayout from "./layout/RootLayout"
 import JobsLayout from "./layout/JobsLayout"
 import Jobs, { jobsLoader } from "./Pages/Jobs"
+import JobDetail from "./Pages/JobDetail"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Contact from "./Pages/Contact"
@@ -29,6 +30,7 @@ export default function App() {
             loader={jobsLoader}
             errorElement={<Errorpage />}
           />
+          <Route path=":id" element={<JobDetail />}></Route>
         </Route>
       </Route>
     )
