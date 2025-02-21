@@ -13,7 +13,7 @@ import Products from "./Pages/Products"
 import RootLayout from "./layout/RootLayout"
 import Errorpage from "./Pages/Errorpage"
 import JobsLayout from "./layout/JobsLayout"
-import Jobs from "./Pages/Jobs"
+import Jobs, { jobsLoader } from "./Pages/Jobs"
 
 export default function App() {
   const router = createBrowserRouter(
@@ -25,7 +25,12 @@ export default function App() {
         <Route path="products" element={<Products />} />
         <Route path="*" element={<Errorpage />} />
         <Route path="jobs" element={<JobsLayout />}>
-          <Route index element={<Jobs />} />
+          <Route
+            index
+            element={<Jobs />}
+            loader={jobsLoader}
+            errorElement={<Errorpage />}
+          />
         </Route>
       </Route>
     )
