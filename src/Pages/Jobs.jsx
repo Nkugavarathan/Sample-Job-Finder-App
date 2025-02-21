@@ -13,7 +13,7 @@ export default function Jobs() {
   return (
     <div className="jobs">
       {jobsData.map((job) => (
-        <div key={job.id}>
+        <div key={job.id} className="job-item">
           <Link to={`/jobs/${job.id}`}>
             <h3>{job.title}</h3>
           </Link>

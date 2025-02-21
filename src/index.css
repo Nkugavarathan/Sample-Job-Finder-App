@@ -6,25 +6,29 @@ body {
 }
 
 .navbar {
+  position: fixed; /* Fix the navbar at the top */
+  width: 100%; /* Ensure it spans the full width */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f9f9f9; /* Light white */
   padding: 10px 20px;
-  flex-wrap: nowrap; /* Prevent wrapping */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  z-index: 1000; /* Ensure it stays on top */
 }
 
 .navbar img {
   height: 40px;
 }
+
 .navlist {
   background-color: #f9f9f9;
   border-radius: 15px;
   box-shadow: 1px 1px 5px rgba(204, 195, 195, 0.5); /* Corrected box-shadow syntax */
-padding:10px 5px;
+  padding: 10px 5px;
 }
 
-.nav-link{
+.nav-link {
   color: #64b5f6; /* Light blue */
   text-decoration: none;
   padding: 10px 15px;
@@ -43,32 +47,81 @@ button {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-right: 60px;
 }
 
 button:hover {
   background-color: #42a5f5; /* Slightly darker blue */
 }
-.container{
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
-
+  padding-top: 60px; /* Adjust for fixed navbar height */
 }
 
-.jobs{
-  padding:40px 0;
-  width: 100%;
+
+/* JobsLayout Styles */
+.jobs-layout {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background to match navbar */
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(204, 195, 195, 0.5); /* Light shadow */
+
+  margin-top: 120px; /* Adjust for fixed navbar height */
+}
+
+.jobs-layout h2 {
+  color: #64b5f6; /* Light blue */
+  margin-bottom: 10px;
+}
+
+.jobs-layout p {
+  color: #666666; /* Darker grey for text */
+  margin-bottom: 20px;
+}
+
+
+/* Jobs Styles */
+.jobs {
+  padding: 40px 0;
   display: flex;
-  justify-content: space-between;
-  gap:20px;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 20px;
+  justify-content: center; /* Center items */
+  margin-top: 10px; /* Adjust for fixed navbar height */
 }
-.jobs a{
-  flex:1;
-  text-decoration: none;
-  padding: 10px;
-  background-color: #efefef;
-  color: black;
 
-width: 100%;
+.job-item {
+  flex: 1 1 calc(33.333% - 40px); /* Three columns layout */
+  max-width: calc(33.333% - 40px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.job-item h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #64b5f6; /* Light blue */
+}
+
+.job-item p {
+  margin: 10px 0;
+  color: #666666; /* Darker grey for text */
+}
+
+.job-item a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
 }
