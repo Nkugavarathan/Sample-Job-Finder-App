@@ -1,19 +1,17 @@
-import React from "react"
-
-import Home from "./Pages/Home"
-import About from "./Pages/About"
 import {
-  Route,
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
+  Route,
 } from "react-router-dom"
-import Contact from "./Pages/Contact"
-import Products from "./Pages/Products"
 import RootLayout from "./layout/RootLayout"
-import Errorpage from "./Pages/Errorpage"
 import JobsLayout from "./layout/JobsLayout"
 import Jobs, { jobsLoader } from "./Pages/Jobs"
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
+import Products from "./Pages/Products"
+import Errorpage from "./Pages/Errorpage"
 
 export default function App() {
   const router = createBrowserRouter(
