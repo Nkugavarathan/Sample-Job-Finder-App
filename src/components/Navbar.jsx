@@ -18,6 +18,9 @@ export default function Navbar() {
         <Link to="contact" className="nav-link">
           Contact
         </Link>
+        <Link to="jobs" className="nav-link">
+          Jobs
+        </Link>
       </div>
       <button onClick={() => navigate("/about")}>Get Started</button>
     </div>
