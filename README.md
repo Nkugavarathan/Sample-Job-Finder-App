@@ -8,4 +8,4 @@ Welcome to the **React Job Listings App**! This application allows users to view
 - 🔍 **Job Details**: Click on a job to view more details about the position.
 - 🧭 **Navigation**: Easy navigation through different pages using React Router.
 
-![Demo](E:\Web develop\React\Greater Stack\React Router\src\assets\demo.JPG)
+![Demo](./src/assets/demo.JPG)
