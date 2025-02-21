@@ -1,8 +1,11 @@
-# React + Vite
+# 📘 React Job Listings App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **React Job Listings App**! This application allows users to view and explore job openings dynamically fetched from a backend API.
 
-Currently, two official plugins are available:
+## 🛠️ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📜 **Job Listings**: View a list of available job openings.
+- 🔍 **Job Details**: Click on a job to view more details about the position.
+- 🧭 **Navigation**: Easy navigation through different pages using React Router.
+
+![Demo](E:\Web develop\React\Greater Stack\React Router\src\assets\demo.JPG)
